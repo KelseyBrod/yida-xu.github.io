@@ -1,17 +1,20 @@
+@font-face {
+    font-family:Bi_polarHandwriting-Regular;
+    src: url(../fonts/Bi_polarHandwriting-Regular.ttf);
+}
+
 body {background-color:rgb(22, 34, 75)}
 p {
     text-align:center;
     font-size: 25px;
-    font-family:Bi_polarHandwriting-Regular;
     color:rgb(255, 255, 255);
-    src: url(../fonts/Bi_polarHandwriting-Regular.ttf
+    line-height: 40px;
 }
 
 
-body {
-    text-align: center;
-    color:aliceblue;
-}
+
+a {text-decoration: none; }
+
 
 
 * {
@@ -67,6 +70,11 @@ section {
 
 }
 
+.link{
+    text-decoration: none;
+    color: rgb(18, 195, 186);
+}
+
 .gallery-item {
     display:inline-block; /* items can be displayed horizontally with a set width/height and margins/padding */
     width: auto;
@@ -76,7 +84,12 @@ section {
 }
 
 footer {
-    background:linear-gradient(rgb(56, 173, 56), rgb(101, 101, 227));
-    padding: 10px;
-    text-align: center;
-    color: white;}
+    text-align:center;
+    font-size: 10px;
+    padding:10px;
+    color:rgba(255, 255, 255, 0.447);
+    line-height: 40px;
+    font-family:Bi_polarHandwriting-Regular;
+    src: url(../fonts/Bi_polarHandwriting-Regular.ttf);
+}
+    
