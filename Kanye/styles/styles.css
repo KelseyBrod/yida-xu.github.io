@@ -1,0 +1,82 @@
+body {background-color:rgb(22, 34, 75)}
+p {
+    text-align:center;
+    font-size: 25px;
+    font-family:Bi_polarHandwriting-Regular;
+    color:rgb(255, 255, 255);
+    src: url(../fonts/Bi_polarHandwriting-Regular.ttf
+}
+
+
+body {
+    text-align: center;
+    color:aliceblue;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 0 20px 0;
+    background:linear-gradient(rgb(68, 114, 241),rgb(18, 18, 228));
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        background: black;
+    }
+    body {
+      background-color: rgb(22, 34, 75);
+    }
+  }
+
+
+h1{
+    color: #ffffff;
+}
+
+main {
+    width: 50%; 
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    border: 1px solid black; 
+    overflow: auto;
+    
+}
+
+.float-left {
+    float: left; 
+    margin: 0 5px 5px 0;
+    width: 100%;  
+    height: auto;
+    
+}
+
+
+#gallery{
+    clear: both; 
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.gallery-item {
+    display:inline-block; /* items can be displayed horizontally with a set width/height and margins/padding */
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px; 
+}
+
+footer {
+    background:linear-gradient(rgb(56, 173, 56), rgb(101, 101, 227));
+    padding: 10px;
+    text-align: center;
+    color: white;}
