@@ -1,37 +1,33 @@
-@font-face {
-    font-family:Bi_polarHandwriting-Regular;
-    src: url(../fonts/Bi_polarHandwriting-Regular.ttf);
-}
 
-body {background-color:rgb(22, 34, 75)}
+body {
+    background-color:rgb(22, 34, 75)
+    }
+body {overflow-x: hidden;}
 
 p {
     text-align:center;
+    width:100%;
+    height: 45px;
+    line-height: 45px;
     font-size: 25px;
     color:rgb(255, 255, 255);
-    line-height: 40px;
+    font-family:Bi_polarHandwriting-Regular;
+    src: url(../fonts/Bi_polarHandwriting-Regular.ttf)
 }
-
-
-
-a {text-decoration: none; }
-
-
 
 * {
     box-sizing: border-box;
 }
 
 header {
-    margin: 0 0 20px 0;
-    background:linear-gradient(rgb(68, 114, 241),rgb(18, 18, 228));
+    margin: 0 0 100px 0;
     padding: 10px;
     text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
     header{
-        background: black;
+        
     }
     body {
       background-color: rgb(22, 34, 75);
@@ -71,9 +67,14 @@ section {
 
 }
 
-.link{
+.link {
     text-decoration: none;
     color: rgb(18, 195, 186);
+}
+
+.maillink {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.5);
 }
 
 .gallery-item {
@@ -87,8 +88,8 @@ section {
 footer {
     text-align:center;
     font-size: 10px;
-    padding:10px;
-    color:rgba(255, 255, 255, 0.447);
+    padding:300px;
+    color:rgba(255, 255, 255, 0.5);
     line-height: 40px;
     font-family:Bi_polarHandwriting-Regular;
     src: url(../fonts/Bi_polarHandwriting-Regular.ttf);
