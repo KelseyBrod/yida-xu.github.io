@@ -2,6 +2,7 @@
     font-family: Bi_polarHandwriting-Regular;
     src: url(../fonts/Bi_polarHandwriting-Regular.ttf);
 }
+
 body {
     background-color:rgb(22, 34, 75)
     }
@@ -14,8 +15,7 @@ p {
     line-height: 45px;
     font-size: 25px;
     color:rgb(255, 255, 255);
-    font-family:Bi_polarHandwriting-Regular;
-    src: url(../fonts/Bi_polarHandwriting-Regular.ttf)
+
 }
 
 * {
@@ -116,7 +116,6 @@ footer {
     padding:300px;
     color:rgba(255, 255, 255, 0.5);
     line-height: 40px;
-    font-family:Bi_polarHandwriting-Regular;
-    src: url(../fonts/Bi_polarHandwriting-Regular.ttf);
+  
 }
     
