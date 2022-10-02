@@ -25,6 +25,15 @@ header {
     text-align: center;
 }
 
+.fit {width:100%; 
+     height:auto}
+
+.okey {
+    width: 1080px;;
+    height:720px;
+    max-width: fit-content;
+}
+
 @media only screen and (max-width: 600px) {
     header{
         
