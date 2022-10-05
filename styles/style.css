@@ -1,12 +1,14 @@
 
 /* notes: spend some time making comments on how Flexbox and Grid are working here and
 personalize this portfolio page using google fonts, different colors, different hover and active styling, maybe a different layout or viewport response*/
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alkalami&display=swap');
 *{
     box-sizing: border-box;
     margin: 0 auto;
 }
 body{
-    background-color: white;
+    background-color: rgb(28, 75, 203);
 }
 
 header, footer {
@@ -19,8 +21,9 @@ header, footer {
 }
 
 main {
-    font-family: 'Times New Roman', Times, serif; /* try using a google font instead*/
-    border: 1px, solid, black;
+    font-family: 'Alkalami', serif;  /* try using a google font instead*/
+    border: 1px, solid, rgb(251, 3, 3);
+    color:white
 }
 
 nav {
@@ -51,7 +54,7 @@ nav {
     grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px; 
-    /* background: rgba(102, 119, 59, 0.5);  play with color*/
+    background: rgba(102, 119, 59, 0.5);
     
 }
 
@@ -60,6 +63,10 @@ nav {
     text-align: center;
     max-width: 100%;
     padding: 40px 0px;
+    color: white;
+    font-family: 'Aboreto', cursive;
+    
+    
 }
 
 .project_item {
@@ -70,9 +77,9 @@ nav {
     "image number"
     "image title"
     "image description";
-    grid-column-gap: 15px;
+    grid-column-gap: 5px;
     align-items: center;
-    background: rgba(232, 232, 231, 0.5); /*  play with color*/
+    background: rgb(22, 34, 75); /*  play with color*/
 }
 
 .project_image { 
@@ -80,13 +87,19 @@ nav {
 }
 .project_number { 
     grid-area: number; 
+    
 }
 .project_title { 
-    grid-area: title; 
+    grid-area: title;
+    
 }
 .project-description { 
     grid-area: description; 
 }
+
+a{
+    text-decoration: none;
+    color:rgb(240, 145, 255)}
 
 #footer-items{
     display: flex;
@@ -97,7 +110,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-top: 1px solid black; /* again, play with this styling*/
+    border-top: 1px solid rgb(201, 44, 44); /* again, play with this styling*/
     margin-top: 2rem;
 
 }
