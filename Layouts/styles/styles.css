@@ -93,3 +93,8 @@ body {
     grid-column-end: 4;
 
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
