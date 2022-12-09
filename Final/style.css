@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    height: 100%;
+    
+}
+
+a, li {
+font-family:"Open Sans", sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #3a3d47;
+text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px, 10%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover{
+    color:rgb(30, 116, 236)
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-tempLate-coLumns: 1fr 1fr 1fr;
+    grid-template-rows:minmax(380px, auto-fil1);
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-fLow: dense;
+    grid-gap: 10px;
+
+    }
+
+.container .box {
+    background: rgb(191, 192, 218);
+    padding: 50px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px){ 
+    .container{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+    grid-template-columns: 1fr;
+    }
+
+}
+
+footer{
+    font-family:"Open Sans", sans-serif;
+    display:grid;
+    grid-tempLate-coLumns: 1fr 1fr 1fr;
+    width: auto;
+    height:auto;
+    padding: 10;
+    margin:10px;
+    
+
+
+}
