@@ -81,4 +81,15 @@ header{
     grid-template-columns: 1fr;
     }
 
+
+}
+footer{
+    font-family:"Open Sans", sans-serif;
+    display:grid;
+    grid-tempLate-coLumns: 1fr 1fr 1fr;
+    width: auto;
+    height:auto;
+    padding: 10;
+    margin:10px;
+    
 }
