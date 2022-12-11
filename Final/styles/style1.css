@@ -6,90 +6,95 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #ffffff;
-    height: 100%;
-    
-}
-
-a, li {
-font-family:"Open Sans", sans-serif;
-font-weight: 500;
-font-size: 16px;
-color: #3a3d47;
-text-decoration: none;
-}
-
-header{
+header {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding: 30px, 10%;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background-color: #333;
+    color: #fff;
 }
 
-.logo{
+.logo {
     cursor: pointer;
-    margin-right: auto;
+}
+
+.navbar {
+    display: flex;
 }
 
 .navbar li {
-    display: inline-block;
-    padding: 0px 20px;
+    list-style: none;
+    margin-left: 1rem;
 }
 
-.navbar li a{
-    transition: all 0.3s ease 0s;
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.navbar li a:hover{
-    color:rgb(30, 116, 236)
+.navbar li a:hover {
+    color: #ccc;
 }
 
 .container {
     position: relative;
     max-width: 100%;
     display: grid;
-    grid-tempLate-coLumns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:minmax(380px, auto-fil1);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(380px, auto-fil1);
     grid-template-rows: minmax(100px, auto);
-    margin: 40px;
-    grid-auto-fLow: dense;
+    margin: 50px;
+    grid-auto-flow: dense;
     grid-gap: 10px;
-
-    }
+}
 
 .container .box {
     background: rgb(191, 192, 218);
-    padding: 50px;
+    padding: 100px;
     display: grid;
     font-size: 20px;
     place-items: center;
     text-align: center;
     color: rgb(255, 255, 255);
     transition: 0.5s;
+    cursor: pointer;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 850px){ 
-    .container{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.container a {
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+    font-size: 16px;
+    font-weight: bold;
+}
+.container .box:hover {
+    background-color: #ddd;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px) { 
+    .container {
+        grid-template-columns: 1fr;
     }
-    
 }
 
-@media only screen and (max-width: 600px){
-    .container{
-    grid-template-columns: 1fr;
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
     }
-
-
 }
-footer{
-    font-family:"Open Sans", sans-serif;
-    display:grid;
-    grid-tempLate-coLumns: 1fr 1fr 1fr;
-    width: auto;
-    height:auto;
-    padding: 10;
-    margin:10px;
-    
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed ;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
